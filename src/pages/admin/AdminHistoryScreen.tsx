@@ -42,12 +42,11 @@ const AdminHistoryScreen = () => {
           <table className="w-full flex justify-between mt-2">
             <table className="max-md:hidden block">
               <th>ID</th>
-              <tr className="text-[14px] ">
-                654e1a5c80ef728332e40e01
-              </tr>
-              <tr className="text-[14px] ">
-                654e1a5c80ef728332e40e01
-              </tr>
+              <tr className="text-[14px] ">654e1a5c80ef728332e40e01</tr>
+              <tr className="text-[14px] ">654e1a5c80ef728332e40e01</tr>
+              <tr className="text-[14px] ">654e1a5c80ef728332e40e01</tr>
+              <tr className="text-[14px] ">654e1a5c80ef728332e40e01</tr>
+              <tr className="text-[14px] ">654e1a5c80ef728332e40e01</tr>
             </table>
             <table className="">
               <th>Date</th>
@@ -56,13 +55,21 @@ const AdminHistoryScreen = () => {
             </table>
             <table className="max-md:hidden block">
               <th>Recipient</th>
-              <tr className="text-[14px] max-sm:text-[10px]">Kossyrisochukwu</tr>
-              <tr className="text-[14px] max-sm:text-[10px]">Kossyrisochukwu</tr>
+              <tr className="text-[14px] max-sm:text-[10px]">
+                Kossyrisochukwu
+              </tr>
+              <tr className="text-[14px] max-sm:text-[10px]">
+                Kossyrisochukwu
+              </tr>
             </table>
             <table>
               <th>Email</th>
-              <tr className="text-[14px] max-sm:text-[10px]">kossyuzoigwe@gmail.com</tr>
-              <tr className="text-[14px] max-sm:text-[10px]">kossyuzoigwe@gmail.com</tr>
+              <tr className="text-[14px] max-sm:text-[10px]">
+                kossyuzoigwe@gmail.com
+              </tr>
+              <tr className="text-[14px] max-sm:text-[10px]">
+                kossyuzoigwe@gmail.com
+              </tr>
             </table>
             <table className="flex items-center flex-col">
               <th>Bags</th>
