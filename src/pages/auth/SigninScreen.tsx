@@ -3,7 +3,6 @@ import dirt from "../../assets/Children.webp";
 import Sign from "./Sign";
 
 const SigninScreen = () => {
-
   return (
     <div className="w-full h-[100vh] flex items-center justify-center bg-gray-100  ">
       <div className="w-[93%] h-[93%]  rounded-xl shadow-3xl flex overflow-hidden max-lg:justify-center">
@@ -25,7 +24,7 @@ const SigninScreen = () => {
                       Login
                     </button>
                   </Link>
-                  <Link to="/auth/register">
+                  <Link to="/register">
                     <button
                       className="
                    

@@ -9,7 +9,7 @@ import ViewAllScreen from "../pages/admin/ViewAllScreen";
 import CreditScreen from "../pages/admin/CreditScreen";
 import AdminHistoryScreen from "../pages/admin/AdminHistoryScreen";
 import PrivateRoute from "./PrivateRoute";
-import AdminRoute from "./AdminRoute";
+// import AdminRoute from "./AdminRoute";
 import EmailScreen from "../pages/auth/EmailScreen";
 import VerifiedScreen from "../pages/auth/VerifiedScreen";
 import ProfileScreen from "../pages/screen/ProfileScreen";
@@ -18,7 +18,7 @@ import HubScreen from "../pages/screen/HubScreen";
 
 export const mainRouter = createBrowserRouter([
   {
-    path: "/auth",
+    path: "/",
     element: <FirstLayout />,
     children: [
       {
@@ -28,11 +28,11 @@ export const mainRouter = createBrowserRouter([
     ],
   },
   {
-    path: "/auth/register",
+    path: "/register",
     element: <RegisterScreen />,
   },
   {
-    path: "/auth/signin",
+    path: "/signin",
     element: <SigninScreen />,
   },
   {

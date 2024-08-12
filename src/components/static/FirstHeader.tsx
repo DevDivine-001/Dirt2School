@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div>
       {show ? (
-        <div className="w-full h-[70px] fixed flex items-center transition-all duration-300 justify-center z-20  text-black bg-white">
+        <div className="w-full h-[70px] fixed flex items-center transition-all duration-700 justify-center z-20  text-black bg-white">
           <div className="w-[90%] h-[100%] flex items-center justify-center z-20 ">
             <div className="flex w-[100%] h-[100%] justify-between items-center">
               <div className="w-[50px] h-[50px] max-sm:w-[40px] max-sm:h-[40px]  rounded-full border flex items-center justify-center border-green-500 ">
@@ -93,7 +93,7 @@ const Header = () => {
                   </nav>
                 </Link>
               </div>
-              <NavLink to="register">
+              <Link to="/register">
                 <button
                   className="w-[120px] rounded-[3px] relative flex justify-center items-center gap-1 hover:text-[black)] hover:before:translate-x-[105%]
             overflow-hidden before:transition-transform
@@ -104,9 +104,9 @@ const Header = () => {
             border-[] bg-[whitesmoke]
             px-2 h-10 text-[13px] font-medium max-sm:hidden"
                 >
-                  Get Started
+                <Link to="/register">  Get Started</Link>
                 </button>
-              </NavLink>
+              </Link>
 
               <div className="hidden  mt-[220px] max-sm:block">
                 <Menue />
@@ -115,7 +115,7 @@ const Header = () => {
           </div>
         </div>
       ) : (
-        <div className="w-full h-[70px] fixed flex items-center transition-all duration-300 justify-center z-20 text-white">
+        <div className="w-full h-[70px] fixed flex items-center transition-all duration-700 justify-center z-20 text-white">
           <div className="w-[90%] h-[100%] flex items-center justify-center z-20 ">
             <div className="flex w-[100%] h-[100%] justify-between items-center">
               <div className="w-[50px] h-[50px] rounded-full border flex items-center justify-center">
@@ -141,7 +141,7 @@ const Header = () => {
                   offset={400}
                   duration={500}
                 >
-                  <nav className="hover:cursor-pointer hover:underline transition-all duration-300">
+                  <nav className="hover:cursor-pointer hover:underline transition-all duration-300 ">
                     About Us
                   </nav>
                 </Link>

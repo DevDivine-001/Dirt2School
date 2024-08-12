@@ -18,6 +18,8 @@ const AdminLayout = () => {
 
   const [change, setChange] = useState<boolean>(false);
   const onChanged = () => {
+    console.log(onChanged);
+    
     setChange(change);
   };
   return (

@@ -35,10 +35,10 @@ const MainHeader = () => {
           // }}
         >
           <div className="w-[45px] h-[45px] max-sm:w-[40px] max-sm:h-[40px]  rounded-full border flex items-center justify-center border-white ">
-            <LiaSchoolSolid className="text-4xl text-white max-sm:text[2xl hover:text-gray-100 duration-300 transition-all cursor-pointer" />
+            <LiaSchoolSolid className="text-4xl text-white max-sm:text[2xl hover:text-gray-100 duration-300 transition-all cursor-pointer bg-[blue]" />
           </div>
           <div
-            className="flex items-center justify-center relative cursor-pointer"
+            className="flex items-center justify-center relative cursor-pointer bg-[blue]"
             onClick={() => {
               onShow();
             }}
@@ -47,11 +47,11 @@ const MainHeader = () => {
               {user.studentName ? user.studentName : user.email}
             </div>
             <div className="hidden max-sm:block">
-              <GiHamburgerMenu className="text-2xl hover:cursor-pointer hover:scale-[1.1] transition-all duration-300 text-white"/>
+              <GiHamburgerMenu className="text-2xl hover:cursor-pointer hover:scale-[1.1] transition-all duration-300 text-white" />
             </div>
             {!show ? (
               <div className="">
-                <MdOutlineKeyboardArrowDown className="max-sm:hidden flex transition-all duration-500 text-white " />
+                <MdOutlineKeyboardArrowDown className="max-sm:hidden flex transition-all duration-500 text-white bg-[red]" />
               </div>
             ) : (
               <div className="">

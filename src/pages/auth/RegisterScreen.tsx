@@ -16,7 +16,7 @@ const RegisterScreen = () => {
             <div className="flex w-full justify-between my-2">
               <div className="flex w-full items-center justify-center ">
                 <div className="flex my-1">
-                  <Link to="/auth/signin">
+                  <Link to="/signin">
                     <button
                       className="  bg-green-400 text-white
                      py-2 px-5 ml-2 rounded-sm  font-semibold transition-all rounded-tl-[20px] rounded-br-[20px]  duration-500"
@@ -24,7 +24,7 @@ const RegisterScreen = () => {
                       Login
                     </button>
                   </Link>
-                  <Link to="/auth/register">
+                  <Link to="/register">
                     <button
                       className="
                    

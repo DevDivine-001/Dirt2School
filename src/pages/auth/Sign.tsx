@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import LoadingScreen from "./LoadingScreen";
-import { signinApi, verifiedApi } from "../../apis/authApi";
+import { signinApi,  } from "../../apis/authApi";
 import { useNavigate } from "react-router-dom";
 // import { jwtDecode } from "jwt-decode";
 import { FaEye } from "react-icons/fa";
@@ -33,6 +33,10 @@ const Sign = () => {
   });
 
   const onHandleSubmit = handleSubmit(async (data: any) => {
+    
+
+    
+    
     setLoading(true);
     const { email, password } = data;
     signinApi({ email, password }).then((res) => {

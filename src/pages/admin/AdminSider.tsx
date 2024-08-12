@@ -60,9 +60,7 @@ const AdminSider = () => {
             </Link>
             <Link to="/admin/history">
               {!toggle ? (
-                <div className="font-bold mt-8 max-sm:text-[13px]">
-                  History
-                </div>
+                <div className="font-bold mt-8 max-sm:text-[13px]">History</div>
               ) : (
                 <MdOutlineManageHistory className="text-3xl mt-9" />
               )}

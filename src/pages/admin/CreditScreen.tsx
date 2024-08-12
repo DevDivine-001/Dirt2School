@@ -5,7 +5,10 @@ import Swal from "sweetalert2";
 import { useSelector } from "react-redux";
 
 const CreditScreen = () => {
-  const user = useSelector((state: any) => state.user);
+  const user = useSelector((state: any) => 
+    
+    state.user);
+    console.log(user);
   const Schema = yup.object({
     studentName: yup.string().required(),
     amount: yup.number().required(),

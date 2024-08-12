@@ -29,8 +29,8 @@ export const verifyApi = async (token: any) => {
   try {
     return await axios
       .patch(`${URL}/${token}/student-secret-key`)
-      .then((res:any) => {
-        console.log( "showing res: ",res)
+      .then((res: any) => {
+        console.log("showing res: ", res);
         return res.data.data;
       });
   } catch (error) {
@@ -40,7 +40,7 @@ export const verifyApi = async (token: any) => {
 
 export const verifiedApi = async (token: string) => {
   try {
-    return await axios.get(`${URL}/${token}/verify-user`).then((res:any) => {
+    return await axios.get(`${URL}/${token}/verify-user`).then((res: any) => {
       return res.data?.data;
     });
   } catch (error) {
